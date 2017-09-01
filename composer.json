@@ -1,21 +1,21 @@
 {
-    "name": "bitpay/zencart",
-    "description": "BitPay payment plugin for ZenCart",
+    "name": "GloBee-Official/zencart",
+    "description": "GloBee payment plugin for ZenCart",
     "type": "zencart-plugin",
     "keywords": ["zencart","plugin","payment","ecommerce","bitcoin","bitpay"],
-    "homepage": "https://github.com/bitpay/zencart-plugin",
+    "homepage": "https://github.com/GloBee-Official/zencart-plugin",
     "license": "MIT",
     "support": {
-        "email": "support@bitpay.com",
-        "issues": "https://github.com/bitpay/zencart-plugin/issues",
-        "source": "https://github.com/bitpay/zencart-plugin"
+        "email": "support@globee.com",
+        "issues": "https://github.com/GloBee-Official/zencart-plugin/issues",
+        "source": "https://github.com/GloBee-Official/zencart-plugin"
     },
     "minimum-stability": "stable",
     "authors": [
         {
-            "name": "BitPay Integrations Development Team",
-            "email": "integrations@bitpay.com",
-            "homepage": "https://bitpay.com/integrations"
+            "name": "GloBee Integrations Development Team",
+            "email": "integrations@globee.com",
+            "homepage": "https://globee.com/integrations"
         }
     ],
     "require": {

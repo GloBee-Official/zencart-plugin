@@ -26,11 +26,11 @@
  
  
 //	Bitpay Payment Module - Lanugage File
-define('MODULE_PAYMENT_BITPAY_TEXT_TITLE', 'Bitcoins via bitpay.com');
-define('MODULE_PAYMENT_BITPAY_TEXT_DESCRIPTION', 'Use bitpay.com\'s invoice processing server to automatically accept bitcoins.');
-define('MODULE_PAYMENT_BITPAY_TEXT_EMAIL_FOOTER', 'You just paid with bitcoins via bitpay.com -- Thanks!');
+define('MODULE_PAYMENT_BITPAY_TEXT_TITLE', 'Bitcoins via globee.com');
+define('MODULE_PAYMENT_BITPAY_TEXT_DESCRIPTION', 'Use globee.com\'s invoice processing server to automatically accept bitcoins.');
+define('MODULE_PAYMENT_BITPAY_TEXT_EMAIL_FOOTER', 'You just paid with bitcoins via globee.com -- Thanks!');
 
 // Error messages:
-define('MODULE_PAYMENT_BITPAY_BAD_CURRENCY', 'Currency not supported by bitpay.com.  Please choose another currency.');
-define('MODULE_PAYMENT_BITPAY_CREATE_INVOICE_FAILED', 'Unable to process payment using bitpay.  Please choose another form of payment.');
+define('MODULE_PAYMENT_BITPAY_BAD_CURRENCY', 'Currency not supported by globee.com.  Please choose another currency.');
+define('MODULE_PAYMENT_BITPAY_CREATE_INVOICE_FAILED', 'Unable to process payment using globee.  Please choose another form of payment.');
 ?>

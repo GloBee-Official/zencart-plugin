@@ -184,16 +184,16 @@ class bitpay {
     global $db, $messageStack;
 
     if (defined('MODULE_PAYMENT_BITPAY_STATUS')) {
-      $messageStack->add_session('Bit-pay module already installed.', 'error');
+      $messageStack->add_session('GloBee module already installed.', 'error');
       zen_redirect(zen_href_link(FILENAME_MODULES, 'set=payment&module=bitpay', 'NONSSL'));
       return 'failed';
     }
 
     $db->Execute("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) "
-    ."values ('Enable Bit-pay Module', 'MODULE_PAYMENT_BITPAY_STATUS', 'True', 'Do you want to accept bitcoin payments via bit-pay.com?', '6', '0', 'zen_cfg_select_option(array(\'True\', \'False\'), ', now());");
+    ."values ('Enable Bit-pay Module', 'MODULE_PAYMENT_BITPAY_STATUS', 'True', 'Do you want to accept bitcoin payments via globee.com?', '6', '0', 'zen_cfg_select_option(array(\'True\', \'False\'), ', now());");
 
     $db->Execute("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) "
-    ."values ('API Key', 'MODULE_PAYMENT_BITPAY_APIKEY', '', 'Enter you API Key which you generated at bitpay.com', '6', '0', now());");
+    ."values ('API Key', 'MODULE_PAYMENT_BITPAY_APIKEY', '', 'Enter you API Key which you generated at globee.com', '6', '0', now());");
 
     $db->Execute("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, set_function, date_added) "
     ."values ('Transaction speed', 'MODULE_PAYMENT_BITPAY_TRANSACTION_SPEED', 'low', 'At what speed do you want the transactions to be considered confirmed?', '6', '0', 'zen_cfg_select_option(array(\'high\', \'medium\', \'low\'),', now());");
@@ -205,7 +205,7 @@ class bitpay {
     ."values ('Paid Order Status', 'MODULE_PAYMENT_BITPAY_PAID_STATUS_ID', '2', 'Automatically set the status of paid orders to this value.', '6', '0', 'zen_cfg_pull_down_order_statuses(', 'zen_get_order_status_name', now())");
 
     $db->Execute("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, date_added) "
-    ."values ('Currencies', 'MODULE_PAYMENT_BITPAY_CURRENCIES', 'BTC, USD, EUR, GBP, AUD, BGN, BRL, CAD, CHF, CNY, CZK, DKK, HKD, HRK, HUF, IDR, ILS, INR, JPY, KRW, LTL, LVL, MXN, MYR, NOK, NZD, PHP, PLN, RON, RUB, SEK, SGD, THB, TRY, ZAR', 'Only enable bit-pay payments if one of these currencies is selected (note: currency must be supported by bit-pay.com).', '6', '0', now())");
+    ."values ('Currencies', 'MODULE_PAYMENT_BITPAY_CURRENCIES', 'BTC, USD, EUR, GBP, AUD, BGN, BRL, CAD, CHF, CNY, CZK, DKK, HKD, HRK, HUF, IDR, ILS, INR, JPY, KRW, LTL, LVL, MXN, MYR, NOK, NZD, PHP, PLN, RON, RUB, SEK, SGD, THB, TRY, ZAR', 'Only enable bit-pay payments if one of these currencies is selected (note: currency must be supported by globee.com).', '6', '0', now())");
       
     $db->Execute("insert into " . TABLE_CONFIGURATION . " (configuration_title, configuration_key, configuration_value, configuration_description, configuration_group_id, sort_order, use_function, set_function, date_added) "
     ."values ('Payment Zone', 'MODULE_PAYMENT_BITPAY_ZONE', '0', 'If a zone is selected, only enable this payment method for that zone.', '6', '2', 'zen_get_zone_class_title', 'zen_cfg_pull_down_zone_classes(', now())");
