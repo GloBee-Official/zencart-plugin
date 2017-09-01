@@ -6,7 +6,7 @@ If you are interested in becoming a maintainer of this project, please contact u
 
 # GloBee plugin for ZenCart
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/GloBee-Official/zencart-plugin/master/LICENSE.txt)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/GloBee-Official/zencart-plugin/master/LICENSE)
 
 ## Quick Start Guide
 
