@@ -2,7 +2,7 @@
 
 This is a Community-supported project.
 
-If you are interested in becoming a maintainer of this project, please contact us at integrations@bitpay.com. Developers at BitPay will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
+If you are interested in becoming a maintainer of this project, please contact us at integrations@globee.com. Developers at BitPay will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
 
 # GloBee plugin for ZenCart
 
@@ -10,7 +10,7 @@ If you are interested in becoming a maintainer of this project, please contact u
 
 ## Quick Start Guide
 
-To get up and running with our plugin quickly, see the GUIDE here: https://github.com/bitpay/zencart-plugin/blob/master/GUIDE.md
+To get up and running with our plugin quickly, see the GUIDE here: https://github.com/GloBee-Official/zencart-plugin/blob/master/GUIDE.md
 
 ## Support
 

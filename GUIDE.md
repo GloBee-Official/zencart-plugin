@@ -8,7 +8,7 @@ You must have a GloBee merchant account to use this plugin.  It's free to [sign-
 
 ## Installation
 
-Download the zip file for this plugin, unzip the arcive and copy the files into the ZenCart directory on your webserver.
+Download the zip file for this plugin, unzip the archive and copy the files into the ZenCart directory on your webserver.
 
 ## Configuration
 
